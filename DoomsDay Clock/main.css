@@ -1,0 +1,55 @@
+body {
+
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(./img/svemir.jpg);
+    
+}
+
+    
+
+h1 {
+    font-family: BloodFont, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2rem;
+    font-size: 4rem;
+    animation: animate infinite alternate-reverse 5s;
+}
+
+#time {
+
+    font-family: BloodFont, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: thistle;
+    animation: animate infinite alternate-reverse 5s ;
+    font-size: 4rem;
+    }
+
+    #date {
+
+        font-family: BloodFont, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: thistle;
+        animation: animate infinite alternate-reverse 5s ;
+        font-size: 4rem;
+        }
+
+    @font-face {
+        font-family: BloodFont;
+        src: url("./BloodFont.otf") format("opentype");
+    }
+
+
+   
+
+    @keyframes animate {
+        0% {color: rgb(120, 20, 40);}
+        25% {color: rgb(46, 44, 43);}
+        50% {color: rgb(120, 20, 40);}
+        75% {color: rgb(89, 76, 72);}
+        100% {color: whitesmoke;}
+    }   
