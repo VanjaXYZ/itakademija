@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osnovne Aritmetičke Operacije</title>
+</head>
+<body>
+    
+<script>
+
+    
+
+    var a = Number(prompt('Unesite vrijednost prvog broja: '));
+    var znak = prompt('Upišite željenu aritmetičku operaciju (+, -, /, *): ');
+    var b = Number(prompt('Unesite vrijednost drugog broja: '));
+
+    
+
+    function zbir(a, b){
+    return a + b;
+   }
+
+   function razlika(a, b) {
+       return a - b;
+   }
+
+   function mnozenje(a, b) {
+       return a * b;
+   }
+
+   function dijeljenje(a, b) {
+       return a / b;
+   }
+
+   switch(znak){
+       case '+': alert('Rezultat je: ' + zbir(a, b));
+       break;
+       case '-': alert('Rezultat je: ' + razlika(a, b)); 
+       break;
+       case '*': alert('Rezultat je: ' + mnozenje(a, b)); 
+       break;
+       case '/': alert('Rezultat je: ' + dijeljenje(a, b)); 
+       break;
+    
+    }
+      
+
+
+
+
+    
+</script>
+
+
+
+</body>
+</html>
