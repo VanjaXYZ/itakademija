@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animations</title>
+
+    <style>
+
+        .box {
+            background-color: #a2687e;
+            background-image: url(./img/zvezda.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            color: white;
+            margin: 64px auto;
+            font-family: sans-serif;
+            font-size: 28px;
+            width: 250px;
+            height: 180px;
+            border-radius: 8px;
+
+            /*
+            animation-name: my-animation;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;      // forwards, backwards or both
+            animation-play-state: running; // running or paused
+            */
+            animation: my-animation 3s ease 2s 2 reverse forwards running;
+        }
+        @keyframes my-animation {
+           0% {
+               transform: translateX(0px) rotate(0deg);
+               width: 250px;
+               height: 180px;
+           }
+           33% {
+               transform: translateX(0px) rotate(360deg);
+               width: 250px;
+               height: 180px;
+           }
+           66% {
+               transform: translate(300px, 50px) rotate(360deg);
+               width: 100px;
+               height: 75px;
+           }
+           100% {
+              transform: translateX(0px) rotate(0deg);
+              width: 350px;
+              height: 220px;
+           }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
